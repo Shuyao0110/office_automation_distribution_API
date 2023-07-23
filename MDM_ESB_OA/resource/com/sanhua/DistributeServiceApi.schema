@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://sanhua.com/DistributeServiceApi" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://sanhua.com/DistributeServiceApi">
+    <annotation>
+        <documentation source="eip_version">65</documentation>
+        <documentation source="oldTargetNameSpace">null</documentation>
+        <documentation source="description">null</documentation>
+    </annotation>
+    <complexType name="personSyncResponse">
+        <sequence>
+            <element name="returnArg" type="string">
+                <annotation>
+                    <documentation source="source.description">null</documentation>
+                    <documentation source="source.displayName">returnArg</documentation>
+                    <documentation source="source.fullClassName">null</documentation>
+                    <documentation source="source.AnnotateeName">null</documentation>
+                    <documentation source="source.LENGTH"/>
+                    <documentation source="source.ifHeader">false</documentation>
+                </annotation>
+            </element>
+        </sequence>
+    </complexType>
+    <element name="personSyncResponse" type="tns:personSyncResponse"/>
+    <complexType name="deptSync">
+        <sequence>
+            <element name="deptData" type="string">
+                <annotation>
+                    <documentation source="source.description">null</documentation>
+                    <documentation source="source.displayName">deptData</documentation>
+                    <documentation source="source.fullClassName">null</documentation>
+                    <documentation source="source.AnnotateeName">null</documentation>
+                    <documentation source="source.LENGTH"/>
+                    <documentation source="source.ifHeader">false</documentation>
+                </annotation>
+            </element>
+        </sequence>
+    </complexType>
+    <element name="deptSync" type="tns:deptSync"/>
+    <complexType name="positionSyncResponse">
+        <sequence>
+            <element name="returnArg" type="string">
+                <annotation>
+                    <documentation source="source.description">null</documentation>
+                    <documentation source="source.displayName">returnArg</documentation>
+                    <documentation source="source.fullClassName">null</documentation>
+                    <documentation source="source.AnnotateeName">null</documentation>
+                    <documentation source="source.LENGTH"/>
+                    <documentation source="source.ifHeader">false</documentation>
+                </annotation>
+            </element>
+        </sequence>
+    </complexType>
+    <element name="positionSyncResponse" type="tns:positionSyncResponse"/>
+    <complexType name="personSync">
+        <sequence>
+            <element name="personData" type="string">
+                <annotation>
+                    <documentation source="source.description">null</documentation>
+                    <documentation source="source.displayName">personData</documentation>
+                    <documentation source="source.fullClassName">null</documentation>
+                    <documentation source="source.AnnotateeName">null</documentation>
+                    <documentation source="source.LENGTH"/>
+                    <documentation source="source.ifHeader">false</documentation>
+                </annotation>
+            </element>
+        </sequence>
+    </complexType>
+    <element name="personSync" type="tns:personSync"/>
+    <complexType name="deptSyncResponse">
+        <sequence>
+            <element name="returnArg" type="string">
+                <annotation>
+                    <documentation source="source.description">null</documentation>
+                    <documentation source="source.displayName">returnArg</documentation>
+                    <documentation source="source.fullClassName">null</documentation>
+                    <documentation source="source.AnnotateeName">null</documentation>
+                    <documentation source="source.LENGTH"/>
+                    <documentation source="source.ifHeader">false</documentation>
+                </annotation>
+            </element>
+        </sequence>
+    </complexType>
+    <element name="deptSyncResponse" type="tns:deptSyncResponse"/>
+    <complexType name="positionSync">
+        <sequence>
+            <element name="positionData" type="string">
+                <annotation>
+                    <documentation source="source.description">null</documentation>
+                    <documentation source="source.displayName">positionData</documentation>
+                    <documentation source="source.fullClassName">null</documentation>
+                    <documentation source="source.AnnotateeName">null</documentation>
+                    <documentation source="source.LENGTH"/>
+                    <documentation source="source.ifHeader">false</documentation>
+                </annotation>
+            </element>
+        </sequence>
+    </complexType>
+    <element name="positionSync" type="tns:positionSync"/>
+</schema>

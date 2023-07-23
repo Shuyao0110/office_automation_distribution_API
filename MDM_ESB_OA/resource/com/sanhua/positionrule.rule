@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="GBK"?>
+
+<mappingRule>
+  <version>1</version>
+  <sourceObjectsInfo>
+    <typeQName>
+      <namespaceURI>http://sanhua.com/DistributeServiceApi</namespaceURI>
+      <localPart>positionSync</localPart>
+      <prefix/>
+    </typeQName>
+    <inputQName>
+      <namespaceURI>http://sanhua.com/DistributeServiceApi</namespaceURI>
+      <localPart>positionSync</localPart>
+      <prefix/>
+    </inputQName>
+    <array>false</array>
+  </sourceObjectsInfo>
+  <targetObjectsInfo>
+    <typeQName>
+      <namespaceURI>http://sanhua.com/DistributeServiceApi</namespaceURI>
+      <localPart>positionSyncResponse</localPart>
+      <prefix/>
+    </typeQName>
+    <inputQName reference="../../sourceObjectsInfo/inputQName"/>
+    <array>false</array>
+  </targetObjectsInfo>
+  <ruleItemList>
+    <ruleItem>
+      <runOrder>1</runOrder>
+      <sources>
+        <mappingPath>
+          <source>true</source>
+          <originPath>/messageContext/body/positionData</originPath>
+        </mappingPath>
+      </sources>
+      <targets>
+        <mappingPath>
+          <source>false</source>
+          <originPath>/messageContext/body/returnArg</originPath>
+        </mappingPath>
+      </targets>
+      <topX>324</topX>
+      <topY>100</topY>
+      <ruleCode>move</ruleCode>
+    </ruleItem>
+  </ruleItemList>
+</mappingRule>

@@ -1,0 +1,30 @@
+Manifest-Version: 1.0
+Require-Bundle: com.ufida.eip.engine-pvm-model;bundle-version="[1.0.0,
+ 2.0.0)", com.ufida.eip.engine-pvm-dao;bundle-version="[1.0.0,2.0.0)",
+  com.ufida.eip.sdo;bundle-version="[1.0.0,3.0.0)", com.ufida.eip.engi
+ ne-pvm-service;bundle-version="[1.0.0,2.0.0)", com.ufida.eip.common;b
+ undle-version="[1.0.0,2.0.0)", com.ufida.eip.engine-api;bundle-versio
+ n="[1.0.0,2.0.0)", com.ufida.eip.rulemap, com.ufida.eip.model.rulemap
+ ;bundle-version="1.0.0"
+Bundle-ClassPath: .
+Bundle-Version: 1.0.0
+Bundle-Name: MDM_ESB_OA
+Bundle-ManifestVersion: 2
+Import-Package: com.ufida.eip.rest.service;version="1.0.0", com.ufida.
+ eip.service;version="[1.0.0,2.0.0)", com.ufida.eip.typeconverter.basi
+ c, com.ufida.eip.rest.ref;version="1.0.0", com.ufida.eip.core;version
+ ="[1.0.0,2.0.0)", javax.ws.rs;version="1.0.0", com.ufida.eip.reposito
+ ry;version="[1.0.0,2.0.0)", com.ufida.eip.comp.definition.service.api
+ .abs, com.ufida.eip.comp;version="[1.0.0,2.0.0)", com.ufida.eip.servi
+ ce.annotation;version="[1.0.0,2.0.0)", com.ufida.eip.exception;versio
+ n="[1.0.0,2.0.0)", com.ufida.eip.typeconverter, com.ufida.eip.arg.ser
+ vice.support;version="[1.0.0,2.0.0)", com.ufida.eip.context;version="
+ [1.0.0,2.0.0)", com.ufida.eip.typeconverter.vo, com.ufida.eip.transac
+ tion.command;version="[1.0.0,2.0.0)", com.ufida.eip.arg.ref.support;v
+ ersion="[1.0.0,2.0.0)", com.ufida.eip.comp.annotation;version="[1.0.0
+ ,2.0.0)", org.osgi.framework, com.ufida.eip.rulemap;version="[1.0.0,2
+ .0.0)", com.ufida.eip.comp.service.support;version="[1.0.0,2.0.0)", c
+ om.ufida.eip.comp.ref;version="[1.0.0,2.0.0)"
+Bundle-SymbolicName: MDM_ESB_OA
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+

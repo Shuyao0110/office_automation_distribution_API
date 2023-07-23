@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="DistributeServiceApi" targetNamespace="http://sanhua.com/DistributeServiceApi" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:ns0="http://sanhua.com/DistributeServiceApi" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+<wsdl:documentation source="eip_version">65</wsdl:documentation>
+  <wsdl:types>
+    <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://sanhua.com/DistributeServiceApi"><xsd:include schemaLocation="../../com/sanhua/DistributeServiceApi.schema"/></xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="deptsyncResponse">
+    <wsdl:part name="parameters" element="ns0:deptSyncResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deptsync">
+    <wsdl:part name="parameters" element="ns0:deptSync">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="positionSyncResponse">
+    <wsdl:part name="parameters" element="ns0:positionSyncResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="positionSync">
+    <wsdl:part name="parameters" element="ns0:positionSync">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="personSync">
+    <wsdl:part name="parameters" element="ns0:personSync">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="personSyncResponse">
+    <wsdl:part name="parameters" element="ns0:personSyncResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="DistributeServiceApi">
+<wsdl:documentation><annotation name="description">DistributeServiceApi</annotation><annotation name="version">1.0.0</annotation><annotation name="oldTargetNameSpace">null</annotation></wsdl:documentation>
+    <wsdl:operation name="deptSync">
+<wsdl:documentation><annotation name="name">deptSync</annotation><annotation name="description">deptSync</annotation></wsdl:documentation>
+      <wsdl:input message="ns0:deptsync">
+    </wsdl:input>
+      <wsdl:output message="ns0:deptsyncResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="positionSync">
+<wsdl:documentation><annotation name="name">positionSync</annotation><annotation name="description">positionSync</annotation></wsdl:documentation>
+      <wsdl:input message="ns0:positionSync">
+    </wsdl:input>
+      <wsdl:output message="ns0:positionSyncResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="personSync">
+<wsdl:documentation><annotation name="name">personSync</annotation><annotation name="description">personSync</annotation></wsdl:documentation>
+      <wsdl:input message="ns0:personSync">
+    </wsdl:input>
+      <wsdl:output message="ns0:personSyncResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DistributeServiceApiSOAP11Binding" type="ns0:DistributeServiceApi">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" wsdl:required="true"/>
+    <wsdl:operation name="deptSync">
+      <soap:operation soapAction="http://sanhua.com/DistributeServiceApi/deptSync" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="positionSync">
+      <soap:operation soapAction="http://sanhua.com/DistributeServiceApi/positionSync" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="personSync">
+      <soap:operation soapAction="http://sanhua.com/DistributeServiceApi/personSync" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DistributeServiceApi">
+    <wsdl:port name="DistributeServiceApiSOAP11port_http" binding="ns0:DistributeServiceApiSOAP11Binding">
+      <soap:address location="http://localhost/eipservice/" wsdl:required="true"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
